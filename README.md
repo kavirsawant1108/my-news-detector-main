@@ -1,31 +1,32 @@
 # Fake News Detection System
 
-> An NLP and machine-learning application that classifies news content as real or fake through text preprocessing and predictive modeling.
+> NLP-based fake news classification system using machine learning, React, TypeScript, and Supabase.
 
 ## Overview
 
 The Fake News Detection System explores how Natural Language Processing (NLP) and machine learning can be used to classify news articles.
 
-The project focuses on the complete ML workflow: preparing text, extracting useful features, training a classifier, evaluating results, and exposing predictions through a web interface.
+The project demonstrates an end-to-end workflow: text preprocessing, feature extraction, model training, evaluation, prediction, and a web interface for interacting with the classifier.
 
-## Features
+## Key Features
 
 - Real vs. fake news classification
 - Text preprocessing for news content
 - Machine-learning based prediction
-- Interactive web interface
-- Supabase integration for application data where configured
+- Interactive React web interface
+- Supabase integration where configured
+- Production build workflow through Vite
 
 ## Tech Stack
 
-- **Frontend:** React, TypeScript, Vite
-- **UI:** Tailwind CSS
-- **Machine Learning:** Python, Scikit-learn, NLTK
-- **Data / Backend Services:** Supabase
-- **Application tooling:** Node.js, npm
-- **Version Control:** Git / GitHub
-
-> This README intentionally lists the technologies actually represented by the repository instead of alternatives such as “Flask / Django / Streamlit”.
+| Layer | Technology |
+|---|---|
+| Frontend | React, TypeScript, Vite |
+| UI | Tailwind CSS |
+| Machine Learning | Python, Scikit-learn, NLTK |
+| Data / Backend Services | Supabase |
+| Tooling | Node.js, npm |
+| Version Control | Git / GitHub |
 
 ## ML Pipeline
 
@@ -60,7 +61,8 @@ Web Interface
 
 - Node.js
 - npm
-- A configured Supabase project if the application features requiring Supabase are used
+- Python environment for the ML components
+- A configured Supabase project if Supabase-backed features are used
 
 ### Installation
 
@@ -108,7 +110,7 @@ my-news-detector-main/
 
 ## Model Evaluation
 
-For a production-quality ML report, record and publish the measured:
+For a production-quality ML report, publish measured results for:
 
 - Accuracy
 - Precision
@@ -116,7 +118,7 @@ For a production-quality ML report, record and publish the measured:
 - F1-score
 - Confusion matrix
 
-Do not claim performance numbers unless they have been measured on a defined test set.
+Performance numbers should only be added after evaluation on a defined test set.
 
 ## Security
 
@@ -129,7 +131,7 @@ Do not claim performance numbers unless they have been measured on a defined tes
 
 - Classification quality depends heavily on dataset quality and distribution.
 - A model trained on historical news may not generalize to new sources or writing styles.
-- “Real” or “fake” classification should be treated as a model prediction, not a substitute for human fact-checking.
+- A model prediction is not a substitute for professional fact-checking.
 
 ## Future Improvements
 
@@ -143,4 +145,4 @@ Do not claim performance numbers unless they have been measured on a defined tes
 
 ## License
 
-Add a license when the project's ownership and reuse terms are confirmed.
+Add a license when project ownership and reuse terms are confirmed.
